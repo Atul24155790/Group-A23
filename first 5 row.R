@@ -46,20 +46,23 @@ group_stats <- hapiness_clean %>%
 
 group_stats
 
-# Step 5: Boxplot of happiness score by income group
+# Step 5:Boxplot of happiness score by income group
 
-hapiness_clean$income <- factor(hapiness_clean$income,
-                                levels = c("Low", "Lower-Middle", "Upper-Middle", "High"),
-                                ordered = TRUE)
+hapiness_clean$income <- factor(
+  hapiness_clean$income,
+  levels = c("Low income",
+             "Lower middle income",
+             "Upper middle income",
+             "High income"),
+  ordered = TRUE
+)
 
-# Boxplot
+#Boxplot
 boxplot(happiness_score ~ income,
-        data = hapiness_clean,
-        main = "Happiness Score by Income Group",
-        xlab = "Income Group",
-        ylab = "Happiness Score",
-        col = "lightblue",     # optional colour
-        border = "darkblue")   # optional border colour
+        data  = hapiness_clean,
+        main  = "Happiness Score by Income Group",
+        xlab  = "Income Group",
+        ylab  = "Happiness Score")
 
 
 # Step 6: Histogram of overall happiness scores
