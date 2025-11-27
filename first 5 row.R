@@ -61,3 +61,8 @@ boxplot(happiness_score ~ income,
         col = "lightblue",     # optional colour
         border = "darkblue")   # optional border colour
 
+
+# Step 6: Histogram of overall happiness scores
+hist(hapiness_clean$happiness_score,
+     main = "Distribution of happiness scores",
+     xlab = "Happiness score")
