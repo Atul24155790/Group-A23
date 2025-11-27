@@ -33,3 +33,15 @@ hapiness_clean <- subset(hapiness_report_2022, !is.na(income))
 nrow(hapiness_clean)
 summary(hapiness_clean)
 
+# Step 4: Descriptive statistics of happiness by income group
+library(dplyr)
+
+group_stats <- hapiness_clean %>%
+  group_by(income) %>%
+  summarise(
+    n_countries = n(),
+    mean_happiness = mean(happiness_score, na.rm = TRUE),
+    sd_happiness   = sd(happiness_score, na.rm = TRUE)
+  )
+
+group_stats
