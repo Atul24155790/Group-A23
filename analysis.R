@@ -25,7 +25,7 @@ library(dplyr)
 group_stats <- hapiness_clean %>%
   group_by(income) %>%
   summarise(
-    n_countries   = n(),
+    n_countries    = n(),
     mean_happiness = mean(happiness_score, na.rm = TRUE),
     sd_happiness   = sd(happiness_score, na.rm = TRUE)
   )
@@ -60,4 +60,3 @@ summary(anova_model)
 # Step 9: Tukey post-hoc test for pairwise income group comparisons
 tukey_results <- TukeyHSD(anova_model)
 tukey_results
-
