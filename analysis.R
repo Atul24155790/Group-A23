@@ -32,4 +32,4 @@ hapiness_clean <- subset(hapiness_report_2022, !is.na(income))
 # Check how many rows and a summary
 nrow(hapiness_clean)
 summary(hapiness_clean)
-
+asa
