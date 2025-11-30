@@ -52,3 +52,12 @@ boxplot(happiness_score ~ income,
 hist(hapiness_clean$happiness_score,
      main = "Distribution of happiness scores",
      xlab = "Happiness score")
+
+# Step 8: One-way ANOVA to test difference in mean happiness across income groups
+anova_model <- aov(happiness_score ~ income, data = hapiness_clean)
+summary(anova_model)
+
+# Step 9: Tukey post-hoc test for pairwise income group comparisons
+tukey_results <- TukeyHSD(anova_model)
+tukey_results
+
