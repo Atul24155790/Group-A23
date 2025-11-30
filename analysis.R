@@ -18,6 +18,9 @@ hapiness_clean <- subset(hapiness_report_2022, !is.na(income))
 
 nrow(hapiness_clean)
 summary(hapiness_clean)
+<<<<<<< HEAD:analysis.R
+asa
+=======
 
 # Step 5: descriptive statistics of happiness by income group
 library(dplyr)
@@ -60,3 +63,8 @@ summary(anova_model)
 # Step 9: Tukey post-hoc test for pairwise income group comparisons
 tukey_results <- TukeyHSD(anova_model)
 tukey_results
+<<<<<<< HEAD
+=======
+
+>>>>>>> 11b5931a9ad125279c81f2d53fd9726d72d69628:first 5 row.R
+>>>>>>> b628801aa34c7519d5f14f436db34acb9d610979
