@@ -6,7 +6,7 @@
 # See https://github.com/r-lib/actions/tree/master/examples#readme for
 # additional example workflows available for the R community.
 
-name: R
+name: Basic CI
 
 on:
   push:
@@ -15,6 +15,7 @@ on:
     branches: [ master ]
 
 jobs:
+
   build:
     runs-on: macOS-latest
 
@@ -22,9 +23,14 @@ jobs:
       matrix:
         r-version: ['4.1.1']
 
+  basic-check:
+    runs-on: ubuntu-latest
+]
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -34,3 +40,12 @@ jobs:
       - name: Run basic R script
         run: |
           Rscript -e "hap <- read.csv('hapiness_report_2022.csv'); print(head(hap)); print(summary(hap$score))"
+
+      - name: Show repository contents
+        run: |
+          pwd
+          ls -R
+
+      - name: CI success
+        run: echo "GitHub Actions ran successfully for this repo."
+
