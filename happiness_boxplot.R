@@ -2,6 +2,7 @@
 # Commit 2: another tiny comment
 # Commit 3: comment number three
 # Commit 4: tiny change for Git
+# Commit 5: another tiny change
 # Load necessary library
 library(ggplot2)
 
