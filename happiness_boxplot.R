@@ -1,4 +1,5 @@
 # Commit 1: add comment for Git
+# Commit 2: another tiny comment
 # Load necessary library
 library(ggplot2)
 
