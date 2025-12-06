@@ -22,8 +22,7 @@ happy$income_group <- as.factor(happy$income_group)
 # Create the box plot
 ggplot(happy, aes(x = income_group, y = score, fill = income_group)) +
   geom_boxplot() +
-  labs(
-    title = "Comparison of Mean Happiness Score by Income Group",
+  labs(title = "Happiness Score by Income Group - Commit 6"),
     x = "Income Group",
     y = "Happiness Score"
   ) +
