@@ -1,0 +1,15 @@
+dataset name: hapiness_report_2022
+
+#import the data set
+library(readr)
+> hapiness_report_2022 <- read_csv("Group-A23/hapiness_report_2022.csv")
+View(hapiness_report_2022)
+
+#number of rows on dataset
+nrow(hapiness_report_2022)
+
+# changing the column name
+colnames(hapiness_report_2022)[2] <- "Hapiness Score"
+
+#print the first 5 rows of the dataset
+print(head(hapiness_report_2022[, c("country", "Hapiness Score", "income")]))
