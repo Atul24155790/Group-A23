@@ -46,3 +46,4 @@ head(happy)
 # Number of countries
 n_countries <- nrow(happy)
 print(paste("Number of countries:", n_countries))
+# Combine income groups into two broader categories
