@@ -41,3 +41,5 @@ ggplot(happy, aes(x = income_group, y = score, fill = income_group)) +
 ggsave("happiness_boxplot.png", width = 8, height = 6)
 sum(is.na(happy))
 summary(happy$score)
+# Preview first rows
+head(happy)
