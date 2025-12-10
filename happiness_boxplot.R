@@ -43,3 +43,6 @@ sum(is.na(happy))
 summary(happy$score)
 # Preview first rows
 head(happy)
+# Number of countries
+n_countries <- nrow(happy)
+print(paste("Number of countries:", n_countries))
