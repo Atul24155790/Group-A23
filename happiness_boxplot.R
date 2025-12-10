@@ -51,3 +51,4 @@ print(paste("Number of countries:", n_countries))
 unique(happy$income)
 
 scale_fill_manual(values = c("#6baed6", "#fd8d3c"))
+stat_summary(fun = mean, geom = "point", size = 3, color = "black")
