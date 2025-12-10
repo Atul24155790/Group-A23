@@ -1,0 +1,17 @@
+Code for doing visualization and analysis
+
+HISTOGRAM
+hist(hapiness_report_2022$`Hapiness Score`,
+     main = "Distribution of Happiness Scores (2022)",
+     xlab = "Happiness Score (0–10 scale)",
+     ylab = "Frequency",
+     col = "lightblue",
+     border = "white")
+
+BOXPLOT
+boxplot(hapiness_report_2022$`Hapiness Score` ~ hapiness_report_2022$group_income,
+        xlab = "Income Group",
+        ylab = "Happiness Score (0–10 scale)",
+        main = "Happiness Scores by Income Group",
+        col = c("lightblue", "lightgreen"),
+        border = "gray40")
