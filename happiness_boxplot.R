@@ -49,3 +49,5 @@ print(paste("Number of countries:", n_countries))
 # Combine income groups into two broader categories
 # Check income categories
 unique(happy$income)
+
+scale_fill_manual(values = c("#6baed6", "#fd8d3c"))
