@@ -68,3 +68,18 @@ sessionInfo()
 # Check for duplicate rows
 sum(duplicated(happy))
 
+# -----------------------------
+# Histogram (optional extra plot)
+# -----------------------------
+ggplot(happy, aes(x = score)) +
+  geom_histogram(binwidth = 0.5, fill = "skyblue", color = "black") +
+  labs(
+    title = "Distribution of Happiness Scores",
+    x = "Happiness Score",
+    y = "Frequency"
+  ) +
+  theme_minimal()
+
+ggsave("happiness_histogram.png", width = 8, height = 6)
+
+
