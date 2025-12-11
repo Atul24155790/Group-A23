@@ -65,3 +65,6 @@ stopifnot("score" %in% colnames(happy))
 ggsave("happiness_boxplot.png", width = 8, height = 6)\
 sessionInfo()
 
+# Check for duplicate rows
+sum(duplicated(happy))
+
