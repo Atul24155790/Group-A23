@@ -61,4 +61,5 @@ theme(
 )
 print("Saving happiness_boxplot.png")
 stopifnot("score" %in% colnames(happy))
-
+# Save plot size: 8x6 inches
+ggsave("happiness_boxplot.png", width = 8, height = 6)
