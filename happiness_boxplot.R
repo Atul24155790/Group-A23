@@ -59,4 +59,5 @@ theme(
   axis.text = element_text(size = 10),
   axis.title = element_text(size = 12)
 )
+print("Saving happiness_boxplot.png")
 
