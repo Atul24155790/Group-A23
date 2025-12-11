@@ -60,4 +60,5 @@ theme(
   axis.title = element_text(size = 12)
 )
 print("Saving happiness_boxplot.png")
+stopifnot("score" %in% colnames(happy))
 
