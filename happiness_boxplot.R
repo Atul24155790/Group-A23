@@ -82,4 +82,7 @@ ggplot(happy, aes(x = score)) +
 
 ggsave("happiness_histogram.png", width = 8, height = 6)
 
+# Check correlation-like comparison (group means)
+aggregate(score ~ income_group, data = happy, mean)
+
 
