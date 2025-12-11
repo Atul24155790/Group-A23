@@ -54,3 +54,9 @@ scale_fill_manual(values = c("#6baed6", "#fd8d3c"))
 stat_summary(fun = mean, geom = "point", size = 3, color = "black")
 ylim(0, 10)
 
+theme(
+  plot.title = element_text(size = 14, face = "bold"),
+  axis.text = element_text(size = 10),
+  axis.title = element_text(size = 12)
+)
+
